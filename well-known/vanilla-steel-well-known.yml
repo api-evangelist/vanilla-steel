@@ -1,0 +1,41 @@
+generated: '2026-07-21'
+method: probed
+source: live HTTP probes of vanillasteel.com and app.vanillasteel.com
+hosts:
+- host: https://vanillasteel.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /robots.txt
+    status: 200
+    note: present; references /sitemap.xml
+  - path: /sitemap.xml
+    status: 200
+    note: 21 URLs; marketing site, legal pages, steel-grade pages; no developer/docs URLs
+- host: https://app.vanillasteel.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: SPA catch-all fallback ("Your Deal Room" HTML app shell), not a real RFC 9116
+      security.txt — verified by fetching the body
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: SPA catch-all fallback, not a real OIDC discovery document
+  - path: /llms.txt
+    status: 200
+    note: SPA catch-all fallback, not a real llms.txt
+notes: app.vanillasteel.com serves its single-page app for every path (200 catch-all),
+  so its 200s are not real well-known documents. No genuine /.well-known/ surface
+  was found on either host.

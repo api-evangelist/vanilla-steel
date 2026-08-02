@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: https://vanillasteel.com/software/terms
+standards:
+- id: gdpr
+  conforms: true
+  evidence: Published Privacy & Data Processing Notice plus a public subprocessor
+    list (https://vanillasteel.com/software/subprocessors, effective 22 May 2026)
+    with 30-day advance notice of subprocessor changes and customer objection rights
+    per Section 8 of the Terms of Service; separate trading and RFQ-classifier privacy
+    policies; German GmbH (Amtsgericht Charlottenburg HRB 218619 B) subject to EU
+    data-protection law.
+- id: oauth2
+  conforms: true
+  evidence: RFQ Extractor connects to customer mailboxes "with your authorisation
+    via OAuth" (Terms of Service Section 2b); Schedule B documents the Google OAuth
+    scopes requested (e.g. https://www.googleapis.com/auth/gmail.readonly) and Microsoft
+    Entra ID permissions with tenant-admin revocation. OAuth is used as a client
+    of Microsoft Graph and Gmail APIs — Vanilla Steel publishes no OAuth-protected
+    API of its own.
+- id: oidc
+  conforms: false
+  evidence: No /.well-known/openid-configuration on vanillasteel.com (404); app.vanillasteel.com
+    serves an SPA catch-all. Sign-in is via Microsoft Entra ID / Google identity
+    (Terms Section 3), not a self-hosted OIDC provider.
+notes: Vanilla Steel publishes no developer API, so API-level standards (JSON:API,
+  RFC 9457, pagination, idempotency) are not assessable. No SOC 2 / ISO 27001 or
+  other certification program is published (security-programs probe found no trust
+  center).

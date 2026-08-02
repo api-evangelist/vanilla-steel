@@ -1,0 +1,23 @@
+# Vanilla Steel
+
+> Vanilla Steel is a Berlin-based B2B steel trading platform (Vanilla Steel GmbH, seedcamp-backed) that matches European steel buyers and sellers, arranges financing, and manages logistics end-to-end. It connects 500+ European suppliers with 5,000+ buyers and sellers, promising a best offer within 48 hours from a single, format-agnostic request. Its SaaS products — the RFQ Classifier (Outlook add-in), RFQ Extractor (OAuth mailbox ingestion for Microsoft 365 and Gmail), and Quoting App — use AI to turn inbound Requests for Quotation into structured trading workflows. Vanilla Steel publishes no public developer API.
+
+## Company
+
+- [Website](https://vanillasteel.com): Steel trading marketplace — buying, selling, financing, and logistics
+- [Deal Room (app login)](https://app.vanillasteel.com): Customer-facing deal room application
+- [Careers](https://vanillasteel.com/careers): Open roles at Vanilla Steel
+- [Imprint](https://vanillasteel.com/imprint): Vanilla Steel GmbH, Schönhauser Allee 36, 10435 Berlin, Germany
+- [GitHub organization](https://github.com/Vanilla-Steel): Public org (VS Quoting Tool value calculator)
+
+## Legal
+
+- [Software Terms of Service](https://vanillasteel.com/software/terms): Covers RFQ Classifier, RFQ Extractor, and Quoting App; security contact security@vanillasteel.com (Section 9)
+- [Software Privacy Policy](https://vanillasteel.com/software/privacy-policy): Privacy & Data Processing Notice for the SaaS services
+- [Trading Privacy Policy](https://vanillasteel.com/privacy-policy/trading): Privacy policy for the trading marketplace
+- [RFQ Classifier Privacy Policy](https://vanillasteel.com/privacy-policy/rfq-classifier): Privacy policy for the Outlook add-in
+- [Subprocessor list](https://vanillasteel.com/software/subprocessors): Public subprocessor register with 30-day change notice
+
+## API Evangelist profile
+
+- [APIs.json](https://raw.githubusercontent.com/api-evangelist/vanilla-steel/refs/heads/main/apis.yml): Machine-readable profile of Vanilla Steel in the API Evangelist network

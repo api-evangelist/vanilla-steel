@@ -1,7 +1,13 @@
 aid: vanilla-steel
 name: Vanilla Steel
-description: Vanilla Steel is a company surfaced as a portfolio company of seedcamp and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Vanilla Steel is a Berlin-based B2B steel trading platform (Vanilla
+  Steel GmbH, backed by seedcamp) that matches European steel buyers and sellers,
+  arranges financing, and manages logistics end-to-end, connecting 500+ European
+  suppliers with 5,000+ buyers and sellers and returning a best offer within 48 hours
+  from a single format-agnostic request. Its SaaS products — the RFQ Classifier Outlook
+  add-in, the RFQ Extractor OAuth mailbox-ingestion service for Microsoft 365 and
+  Gmail, and the Quoting App — use AI to turn inbound Requests for Quotation into
+  structured trading workflows. Vanilla Steel publishes no public developer API.
 url: https://raw.githubusercontent.com/api-evangelist/vanilla-steel/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +15,31 @@ x-backed-by:
 - seedcamp
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://cdn.prod.website-files.com/675269acd09605f5a8107201/6757b240ba8e952843e01281_Opengraph.png
 tags:
 - Company
+- Steel
+- Metals
+- Marketplace
+- Trading
+- B2B
+- Procurement
+- RFQ
+- Logistics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +48,33 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://vanillasteel.com
+  url: https://vanillasteel.com
+- type: Login
+  url: https://app.vanillasteel.com
+- type: TermsOfService
+  url: https://vanillasteel.com/software/terms
+- type: PrivacyPolicy
+  url: https://vanillasteel.com/software/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/Vanilla-Steel
+- type: Careers
+  url: https://vanillasteel.com/careers
+- type: Imprint
+  url: https://vanillasteel.com/imprint
+- type: Subprocessors
+  url: https://vanillasteel.com/software/subprocessors
+- type: DomainSecurity
+  url: security/vanilla-steel-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/vanilla-steel-vulnerability-disclosure.yml
+- type: Security
+  url: https://vanillasteel.com/software/terms
+- type: Conformance
+  url: conformance/vanilla-steel-conformance.yml
+- type: LLMsTxt
+  url: llms/vanilla-steel-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
